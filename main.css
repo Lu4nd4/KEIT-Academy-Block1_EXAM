@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  font-family: "Inter", sans-serif;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 24.99%;
+}
+
+.col-4 {
+  width: 33.32%;
+}
+
+.col-5 {
+  width: 41.65%;
+}
+
+.col-6 {
+  width: 49.98%;
+}
+
+.col-7 {
+  width: 58.31%;
+}
+
+.col-8 {
+  width: 66.64%;
+}
+
+.col-9 {
+  width: 74.97%;
+}
+
+.col-10 {
+  width: 83.3%;
+}
+
+.col-11 {
+  width: 91.63%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #EFEFEF;
+  padding: 0 7% 0 7%;
+}
+.nav .navdiv {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+}
+.nav .rowUl {
+  justify-content: space-between;
+}
+@media (min-width: 600px) {
+  .nav .rowUl .img {
+    display: none;
+  }
+}
+.nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+.nav .navlist {
+  text-align: center;
+}
+.nav .btn {
+  padding: 15px 20px;
+  background-color: #FDC212;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  [class*=col-] {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: #858585;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .nav .navdiv {
+    text-align: center;
+    width: 50%;
+    text-align: left;
+    font-size: 48px;
+  }
+  .nav .navlist {
+    width: 48%;
+    text-align: right;
+  }
+  .nav .img {
+    display: block;
+  }
+  .nav .hidden {
+    display: none;
+    width: 80%;
+    background-color: #858585;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .nav .rowUl a:active {
+    display: block;
+  }
+}
+.container {
+  padding: 7% 7% 0 7%;
+}
+.container .textPart h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.container .textPart p {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 10px 0 20px 0;
+}
+.container .textPart button {
+  background-color: #FDC212;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+}
+@media (min-width: 600px) {
+  .container .hiddenImg {
+    display: none;
+  }
+}
+.container .textPart1, .container .textPart2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container .textPart1 h1, .container .textPart2 h1 {
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.container .textPart1 p, .container .textPart2 p {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0 20px 0;
+}
+.container .group6 {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+    text-align: center;
+  }
+  .container .containerImg {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  .container .hiddenImg {
+    display: block;
+  }
+  .container .shownImg {
+    display: none;
+  }
+  .container .textPart {
+    order: 2;
+    text-align: left;
+    padding-bottom: 100px;
+  }
+  .container .containerImg1 {
+    order: 4;
+    padding-bottom: 50px;
+  }
+  .container .textPart1 {
+    order: 3;
+    padding-bottom: 10px;
+  }
+  .container .group6 {
+    order: 6;
+    padding-bottom: 50px;
+  }
+  .container .textPart2 {
+    order: 5;
+    padding-bottom: 10px;
+  }
+}
+.container2 {
+  justify-content: space-around;
+  text-align: center;
+}
+.container2 h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.container2 * h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container2 * p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.container2 * h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.container2 .box {
+  border-radius: 30px;
+  height: 55%;
+  border: 4px solid lightgrey;
+  padding: 60px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    padding: 20px;
+  }
+  .container2 .box {
+    margin-bottom: 40px;
+  }
+}
+.container3 {
+  padding: 100px;
+}
+.container3 .imageContainer3 {
+  padding-left: 100px;
+}
+.container3 * h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.container3 p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.container3 .btnPart button {
+  background-color: #FDC212;
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  border: none;
+}
+.container3 .btnPart button img {
+  padding-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .container3 {
+    text-align: center;
+    padding: 0;
+  }
+  .container3 .textPartContainer3 {
+    order: 1;
+  }
+  .container3 .textPartContainer3 p {
+    padding: 20px 40px;
+  }
+  .container3 .textPartContainer3 .btnPart {
+    margin-left: 15%;
+  }
+  .container3 .imageContainer3 {
+    order: 2;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+}
+.container4 {
+  padding: 50px 100px 150px 100px;
+}
+.container4 .textpart4 {
+  padding: 20px 130px;
+}
+.container4 .textpart4 h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.container4 .textpart4 p {
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.container4 .textpart5 {
+  padding-top: 50px;
+}
+.container4 .textpart5 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.container4 .textpart5 h4 span {
+  font-weight: 300;
+}
+.container4 .btn5 button {
+  padding: 15px 15px;
+  border-radius: 50px;
+  background-color: #FDC212;
+  border: none;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .container4 {
+    padding: 50px 50px 150px 50px;
+  }
+  .container4 .textpart4 {
+    padding: 20px 50px;
+    text-align: center;
+  }
+  .container4 .textpart5 {
+    width: 55%;
+  }
+  .container4 .btn5 {
+    width: 44%;
+  }
+  .container4 .btn5 button {
+    margin-left: 30%;
+  }
+}
+footer {
+  justify-content: space-around;
+  background: #FEE59A;
+}
+footer div {
+  padding: 50px;
+}
+footer div h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+footer div ul {
+  list-style: none;
+  text-decoration: none;
+  padding-top: 20px;
+}
+footer div ul li {
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+footer .copyright {
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer .copyright h1 {
+  color: #555454;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  footer div {
+    padding: 20px 50px;
+  }
+  footer div ul {
+    padding-top: 10px;
+  }
+}

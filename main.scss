@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+
+}
+.border{
+    border: 1px solid black;
+}
+$defaultColSize: 8.33%;
+ @for $i from 1 to 12{
+   .col-#{$i}{
+        width: $defaultColSize * $i;
+   }
+ }
+ 
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+//  FIRST PART -----------------------------------------------------------------------------------------
+ .nav{
+    width: 100%;
+    height: 80px;
+    background-color: #EFEFEF;
+    padding: 0 7% 0 7%;
+    .navdiv{
+        font-weight: 700;
+        font-size: 24px;
+        text-align: left;
+    }
+    .rowUl{
+        justify-content: space-between;
+        @media(min-width:600px){
+            .img{
+            display: none;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        color: black;
+    }  
+    .navlist{
+        text-align: center;
+    }
+    
+    .btn{
+        padding: 15px 20px;
+        background-color: #FDC212;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+    }
+ }
+// FIRST PART MEDIA 
+@media(max-width: 600px){
+    [class*='col-']{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        color: white;
+        background-color: #858585;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        .navdiv{
+            text-align: center;
+            width: 50%;
+            text-align: left;
+            font-size: 48px;
+
+        }
+        .navlist{
+            width: 48%;
+            text-align: right;
+        }
+        .img{
+            display: block;
+        }
+        .hidden{
+            display: none;
+            width: 80%;
+            background-color: #858585;
+            padding: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .rowUl a:active {
+            display: block;
+        }
+    }
+}
+
+//  SECOND PART -----------------------------------------------------------------------------------------
+ .container{
+    padding: 7% 7% 0 7%;
+    .textPart{
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+
+        }
+        p{
+            font-size: 24px;
+            font-weight: 300;
+            padding: 10px 0 20px 0;
+        }
+        button{
+            background-color: #FDC212;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none;
+        }
+    }
+    @media (min-width:600px){
+        .hiddenImg{
+            display: none;
+        }
+    }
+    .textPart1, .textPart2{
+        padding-top:50px;
+        padding-bottom: 50px;
+        h1{
+            font-size: 36px;
+            font-weight: 500;
+            padding-bottom:10px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            padding: 10px 0 20px 0;
+        }
+    }
+    .group6{
+        justify-content: center;
+    }
+ }
+
+ // SECOND PART MEDIA
+ @media (max-width:600px){
+    .container{
+        width: 100vw;
+        text-align: center;
+        .containerImg{
+            order: 1;
+            padding-bottom: 20px;
+        }
+        .hiddenImg{
+            display: block;
+        }
+        .shownImg{
+            display: none;
+        }
+        .textPart{
+            order: 2;
+            text-align: left;
+            padding-bottom: 100px;
+        }
+        .containerImg1{
+            order: 4;
+            padding-bottom: 50px;
+        }
+        .textPart1{
+            order: 3;
+            padding-bottom: 10px;
+        }
+        .group6{
+            order: 6;
+            padding-bottom: 50px;
+        }
+        .textPart2{
+            order: 5;
+            padding-bottom: 10px;
+        }
+    }
+ }
+ //  THIRD PART -----------------------------------------------------------------------------------------
+
+ .container2{
+    justify-content: space-around;
+    text-align: center;
+    h1{
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    *h2{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    *p{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+    *h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .box{
+        border-radius: 30px;
+        height: 55%;
+        border: 4px solid lightgrey;
+        padding: 60px;
+        margin-bottom: 100px;
+    }
+ }
+// THIRD PART MEDIA
+ @media(max-width:600px){
+    .container2{
+        padding: 20px;
+        .box{
+            margin-bottom: 40px;
+        }
+    }
+ }
+
+ //  FOURTH PART -----------------------------------------------------------------------------------------
+ .container3{
+    padding: 100px;
+    .imageContainer3{
+        padding-left: 100px;
+    }
+    *h1{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .btnPart{
+        button{
+            background-color: #FDC212;
+            border-radius: 50px;
+            padding: 10px 15px;
+            margin-right: 20px;
+            border: none;
+            img{
+                padding-right: 5px;
+            }
+        }
+    }
+ }
+ //FOURTH PART MEDIA
+ @media(max-width: 600px){
+    .container3{
+        text-align: center;
+        padding: 0;
+        .textPartContainer3{
+            order: 1;
+            p{
+                padding: 20px 40px;
+
+            }
+            .btnPart{
+                margin-left: 15%;
+            }
+        }
+        .imageContainer3{
+            order: 2;
+            margin-left: 15%;
+            margin-top: 20px;
+        }
+    }
+ }
+ //   FIFTH PART -----------------------------------------------------------------------------------
+ .container4{
+    padding: 50px 100px 150px 100px;
+    .textpart4{
+        padding: 20px 130px;
+        h1{
+            font-size: 36px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            padding-right: 50px;
+            padding-top: 20px;
+        }
+    }
+    .textpart5{
+        padding-top: 50px;
+        h4{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            span{
+                font-weight: 300;
+            }
+        }
+    }
+    .btn5{
+        button{
+            padding: 15px 15px;
+            border-radius: 50px;
+            background-color: #FDC212;
+            border: none;
+            margin-top: 50px;
+            font-weight: 700;
+        }
+    }
+ }
+ // FIFTH PART MEDIA
+
+ @media (max-width: 600px){
+    .container4{
+        padding: 50px 50px 150px 50px;
+        .textpart4{
+            padding: 20px 50px;
+            text-align: center;
+        }
+        .textpart5{
+            width: 55%;
+        }
+        .btn5{
+            width: 44%;
+            button{
+                margin-left: 30%;
+            }
+        }
+    }
+ }
+  //   FOOTER PART -----------------------------------------------------------------------------------
+
+  footer{
+    justify-content: space-around;
+    background: #FEE59A;
+    div{
+        padding: 50px;
+        h1{
+            font-size: 32px;
+            font-weight: 500;
+        }
+        ul{
+            list-style: none;
+            text-decoration: none;
+            padding-top: 20px;
+            li{
+                padding-top: 5px;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding-bottom: 10px;
+        h1{
+            color: #555454;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+  }
+  // FOOTER MEDIA PART
+
+  @media(max-width:600px){
+    footer{
+        div{
+            padding: 20px 50px;
+            ul{
+                padding-top: 10px;
+            }
+        }
+    }
+  }
