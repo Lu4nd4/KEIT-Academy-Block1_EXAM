@@ -1,2 +1,2 @@
 # block1_EXAM
-Funished Project, Dektop and phone
+Fnished Project, Dektop and phone
